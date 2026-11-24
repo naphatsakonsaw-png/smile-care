@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smile Care | ร้านขายยาสีฟัน</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f9ff;
+  color: #26344a;
+}
+header {
+  background: #1769aa;
+  color: white;
+  text-align: center;
+  padding: 28px 15px;
+}
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+nav {
+  background: white;
+  padding: 15px;
+  text-align: center;
+}
+nav a {
+  color: #1769aa;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 15px;
+}
+h2 {
+  text-align: center;
+  color: #1769aa;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+.product {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 12px #00000012;
+}
+.product img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+}
+.product h3 {
+  color: #1769aa;
+}
+.price {
+  color: #e34b4b;
+  font-size: 24px;
+  font-weight: bold;
+}
+button {
+  background: #1769aa;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background: #0e4f85;
+}
+footer {
+  background: #1769aa;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Smile Care</h1>
+  <p>ร้านจำหน่ายยาสีฟัน เพื่อสุขภาพช่องปาก</p>
+</header>
+
+<nav>
+  <a href="#home">หน้าแรก</a>
+  <a href="#products">สินค้า</a>
+  <a href="#contact">ติดต่อเรา</a>
+</nav>
+
+<div class="container" id="home">
+  <h2>ยินดีต้อนรับสู่ Smile Care</h2>
+  <p style="text-align:center">
+    เลือกซื้อยาสีฟันคุณภาพดี เพื่อรอยยิ้มที่มั่นใจในทุกวัน
+  </p>
+
+  <h2 id="products">สินค้าของเรา</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <img src="images/colgate/ชื่อไฟล์รูปของคุณ" alt="Colgate">
+      <h3>Colgate Optic White Purple</h3>
+      <p>ยาสีฟันสูตรออพติกไวท์ เพอร์เพิล ช่วยปรับโทนสีเหลืองบนผิวฟัน เพื่อให้ฟันดูขาวกระจ่างใส</p>
+      <p class="price">129 บาท</p>
+      <button onclick="order('Colgate Optic White Purple')">สั่งซื้อสินค้า</button>
+    </div>
+
+    <div class="product">
+      <img src="images/darlie/ชื่อไฟล์รูปของคุณ" alt="Darlie">
+      <h3>Darlie Double Action Fresh Protect Forest Mint</h3>
+      <p>ยาสีฟันสูตรดับเบิลแอคชั่น เฟรช โพรเทค กลิ่นฟอเรสต์มินต์ ช่วยลดกลิ่นปากและมอบลมหายใจหอมสดชื่น</p>
+      <p class="price">59 บาท</p>
+      <button onclick="order('Darlie Double Action Forest Mint')">สั่งซื้อสินค้า</button>
+    </div>
+
+  </div>
+</div>
+
+<footer id="contact">
+  <p>Smile Care | ร้านขายยาสีฟัน</p>
+  <p>ขอบคุณที่เลือกซื้อสินค้ากับเรา</p>
+</footer>
+
+<script>
+function order(product) {
+  alert("คุณเลือกสินค้า " + product);
+}
+</script>
+
+</body>
+</html>
